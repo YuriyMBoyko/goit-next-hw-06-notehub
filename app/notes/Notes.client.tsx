@@ -57,7 +57,7 @@ export default function NotesClient() {
   const totalPages = data?.totalPages ?? 0;
 
   return (
-    <div className={css.app}>
+    <main className={css.app}>
       <div className={css.toolbar}>
         <SearchBox value={searchInput} onChange={handleSearchChange} />
 
@@ -85,6 +85,6 @@ export default function NotesClient() {
           <NoteForm onClose={() => setIsModalOpen(false)} />
         </Modal>
       )}
-    </div>
+    </main>
   );
 }

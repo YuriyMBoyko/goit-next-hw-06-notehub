@@ -10,7 +10,11 @@ export const metadata: Metadata = {
   description: "NoteHub react.js+next.js application",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body>
